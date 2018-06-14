@@ -8,7 +8,7 @@ if(isset($_POST["submit"])){
         while ($array = mysqli_fetch_assoc($result)) {
         	?>
            	<script>
-  				setTimeout( 'location="/index-tovar.php";', 1 );
+  				setTimeout( 'location="/category-index.php";', 1 );
 			</script>
 			<?php
         }

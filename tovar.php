@@ -39,6 +39,7 @@ if(isset($_GET['id'])){
 
 
 	?>
+	<br><a href="index-tovar.php"><--Назад</a>
 		</div>
 	</div>
 

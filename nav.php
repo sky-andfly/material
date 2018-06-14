@@ -16,6 +16,7 @@
 	      <ul class="nav navbar-nav">
 	        <li><a href="index.php">Главная <span class="sr-only">(current)</span></a></li>
 	        <li><a href="index-tovar.php?work=new">Добавить</a></li>
+	        <li><a href="category-index.php">Все товары</a></li>
 	        <li><a href="discount.php">Промо-код</a></li>
 	        <li class="active"><a href="index.php">Выйти</a></li>
 	      </ul>
