@@ -15,7 +15,8 @@
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav">
 	        <li><a href="index.php">Главная <span class="sr-only">(current)</span></a></li>
-	        <li><a href="index.php?work=new">Добавить</a></li>
+	        <li><a href="index-tovar.php?work=new">Добавить</a></li>
+	        <li><a href="discount.php">Промо-код</a></li>
 	        <li class="active"><a href="index.php">Выйти</a></li>
 	      </ul>
 	      

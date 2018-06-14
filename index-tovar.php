@@ -70,7 +70,7 @@ if (isset($_POST['submitNew'])) {
 			mysqli_query($mysqli, $query2);
 			?>
 			<script>
-  				setTimeout( 'location="/index.php"');
+  				setTimeout( 'location="/index-tovar.php"');
 			</script>
 			<?php
 			break;	

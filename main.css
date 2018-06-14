@@ -5,8 +5,10 @@ body{
 .white{
 	background-color: white;
 	opacity: 0.9;
-	
-
+}
+.white #text{
+	font-family: Roboto, sans-serif;
+	font-size: 120%;
 }
 
 #names{
