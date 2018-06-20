@@ -2,6 +2,10 @@
 body{
 	background:url(/images/background.jpg); 
 }
+.form-padding{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 .white{
 	background-color: white;
 	opacity: 0.9;

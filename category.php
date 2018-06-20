@@ -1,39 +1,24 @@
 <?
-require_once 'db.php';
-$idCategory=$_GET['category'];
-	$query = "SELECT * FROM `nomenclatura` WHERE `category`='$idCategory' ";
-
-?>
-<!DOCTYPE html>
-<html>
-<head>
-	<?
-		require_once 'title.php';
-	?>
-
-</head>
-<body>
-	<div class="container-fluid box">
-		<?
-		require_once 'nav.php';
+	$idCategory=$_GET['category'];
+ $query1 = "SELECT * FROM `category` WHERE `id`='$idCategory' ";
+    	if ($result1 = mysqli_query($mysqli, $query1)) {
+        while ($array1 = mysqli_fetch_assoc($result1)) {
+        	$name=$array1['name'];
 		?>
-	<div class="white">
+		<h3>Панель администратора - Категория <?=$name?></h3><hr>
 		<?
+        }
+    }
 		
+
+	$query = "SELECT * FROM `nomenclatura` WHERE `category`='$idCategory' ";	
     if ($result = mysqli_query($mysqli, $query)) {
         while ($array = mysqli_fetch_assoc($result)) {
            $id= $array['id'];
-           echo "<a href='tovar.php?id=$id'>".$array['name']."</a><hr>";
+           echo "<a href='index.php?page=tovar&id=$id'>".$array['name']."</a><hr>";
                    }
     }
 
 
 	?>
-	<a href="category-index.php"><--Назад</a>
-	</div>
-
-	</div>
-
-
-</body>
-</html>
+	<a href="index.php?page=category-index"><--Назад</a>
